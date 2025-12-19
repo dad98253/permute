@@ -11,7 +11,7 @@ A common use for the program is to help with certain word puzzles. The following
 perturbations of the string "FFERO" and then pass the output through a spell checker to generate a list
 of possible English words:
 
-       permute FFERO |sort|uniq>in.txt ; comm -23 in.txt <(aspell list < in.txt) 2>/dev/null
+       permute FFERO |sort|uniq>in.txt ; comm -23 in.txt <(aspell list < in.txt)
 
 [AUTHOR]
 John Kuras (w7og@yahoo.com)

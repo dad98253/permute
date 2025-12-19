@@ -151,10 +151,9 @@ BAA
 
 If you are only interested in character permutations that form words contained
 in your default language, you may spell check the results:
-This is the output of the command @samp{permute FFERO |sort|uniq>in.txt ; comm -23 in.txt <(aspell list < in.txt) 2>/dev/null}:
+This is the output of the command @samp{permute FFERO 2>/dev/null |sort|uniq>in.txt ; comm -23 in.txt <(aspell list < in.txt)}:
 
 @example
- finding all of the permutations of FFERO that are more than 2 characters long
 EFF
 FER
 FOE
@@ -167,7 +166,6 @@ ORE
 REF
 ROE
 @end example
-
 
 @node Invoking permute
 @chapter Invoking @command{permute}
