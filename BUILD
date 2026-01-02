@@ -3,6 +3,7 @@
 # first, make sure that all of the prerequisites are installed:
 sudo apt-get update
 sudo apt-get install build-essential libc6-dev autoconf automake libtool gettext autotools-dev git 
+sudo apt-get install help2man texinfo texi2html
 
 # add the following to your ~/.gitconfig file:
 $ git config --global user.name "your first and last name"
@@ -24,7 +25,7 @@ sudo make install
 # ---------------------------------------------------------------------------------------
 
 # if you plan to build a Debian package file, you will also need the following:
-sudo apt-get install debmake devscripts dh_autoreconf autopkgtest dpkg quilt lintian
+sudo apt-get install debmake devscripts dh-anutoreconf autopkgtest dpkg quilt lintian
 sudo apt-get install gpg gpg-agent sbuild schroot ccache libeatmydata1 parallel 
 sudo apt-get install sbuild-debian-developer-setup git-buildpackage
 
