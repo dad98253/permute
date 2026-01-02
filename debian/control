@@ -2,7 +2,8 @@ Source: permute
 Section: math
 Priority: optional
 Maintainer: John Kuras <w7og@yahoo.com>
-Build-Depends: debhelper-compat (= 13)
+Build-Depends:
+ debhelper-compat (= 13),
 Standards-Version: 4.6.2
 Homepage: https://github.com/dad98253/permute/wiki
 Rules-Requires-Root: no
@@ -12,8 +13,11 @@ Vcs-Browser: https://github.com/dad98253/permute
 Package: permute
 Architecture: any
 Multi-Arch: foreign
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Suggests: aspell | ispell
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Suggests:
+ aspell | ispell,
 Description: find perturbations of characters in a string
  The output is a word list written to stdout one word per line. The
  length of the perturbated words will be greater than a minimum length
