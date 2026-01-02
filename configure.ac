@@ -69,7 +69,7 @@ dnl Ensure VLAs are not used.
 AC_DEFINE([GNULIB_NO_VLA], [1], [Define to 1 to disable use of VLAs])
 
 # Gettext.
-AM_GNU_GETTEXT_VERSION([0.21])
+AM_GNU_GETTEXT_VERSION([0.23.1])
 AM_GNU_GETTEXT([external], [need-formatstring-macros])
 
 AC_CONFIG_TESTDIR(tests)
